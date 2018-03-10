@@ -20,7 +20,7 @@ class SixBytesTests: XCTestCase {
         super.tearDown()
     }
     
-    func getGetValue() {
+    func testGetValue() {
         // Given
         let inputBytes: [UInt8] = [1, 2, 0, 0, 0, 0]
         let sixBytes = SixBytes(bytes: inputBytes)
