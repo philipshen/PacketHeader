@@ -8,11 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		CDF76D5C20541504009DEF85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF76D5B20541504009DEF85 /* AppDelegate.swift */; };
-		CDF76D5E20541504009DEF85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF76D5D20541504009DEF85 /* ViewController.swift */; };
 		CDF76D6120541504009DEF85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF76D5F20541504009DEF85 /* Main.storyboard */; };
 		CDF76D6320541504009DEF85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF76D6220541504009DEF85 /* Assets.xcassets */; };
 		CDF76D6620541504009DEF85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF76D6420541504009DEF85 /* LaunchScreen.storyboard */; };
-		CDF76D7120541504009DEF85 /* PacketReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF76D7020541504009DEF85 /* PacketReaderTests.swift */; };
+		CDF76D7F20541552009DEF85 /* ExamplePacketHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF76D7E20541552009DEF85 /* ExamplePacketHeader.swift */; };
+		CDF76D8120541634009DEF85 /* UInt16_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF76D8020541634009DEF85 /* UInt16_Extensions.swift */; };
+		CDF76D8320541685009DEF85 /* UInt32_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF76D8220541685009DEF85 /* UInt32_Extensions.swift */; };
+		CDF76D8920541780009DEF85 /* UInt32ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF76D8820541780009DEF85 /* UInt32ExtensionTests.swift */; };
+		CDF76D8B205418A5009DEF85 /* UInt16ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF76D8A205418A5009DEF85 /* UInt16ExtensionTests.swift */; };
+		CDF76D8E20541BD6009DEF85 /* PacketConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF76D8D20541BD6009DEF85 /* PacketConstants.swift */; };
+		CDF76D9020541F17009DEF85 /* UInt64_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF76D8F20541F17009DEF85 /* UInt64_Extensions.swift */; };
+		CDF76D9220541F4D009DEF85 /* UInt64ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF76D9120541F4C009DEF85 /* UInt64ExtensionTests.swift */; };
+		CDF76D9520542023009DEF85 /* ExamplePacketHeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF76D9420542023009DEF85 /* ExamplePacketHeaderTests.swift */; };
+		CDF76D97205420D3009DEF85 /* SixBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF76D96205420D3009DEF85 /* SixBytes.swift */; };
+		CDF76D99205420E7009DEF85 /* SixBytesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF76D98205420E7009DEF85 /* SixBytesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +37,23 @@
 /* Begin PBXFileReference section */
 		CDF76D5820541504009DEF85 /* PacketReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PacketReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF76D5B20541504009DEF85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDF76D5D20541504009DEF85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CDF76D6020541504009DEF85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDF76D6220541504009DEF85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDF76D6520541504009DEF85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDF76D6720541504009DEF85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDF76D6C20541504009DEF85 /* PacketReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PacketReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDF76D7020541504009DEF85 /* PacketReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketReaderTests.swift; sourceTree = "<group>"; };
 		CDF76D7220541504009DEF85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDF76D7E20541552009DEF85 /* ExamplePacketHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePacketHeader.swift; sourceTree = "<group>"; };
+		CDF76D8020541634009DEF85 /* UInt16_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt16_Extensions.swift; sourceTree = "<group>"; };
+		CDF76D8220541685009DEF85 /* UInt32_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt32_Extensions.swift; sourceTree = "<group>"; };
+		CDF76D8820541780009DEF85 /* UInt32ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt32ExtensionTests.swift; sourceTree = "<group>"; };
+		CDF76D8A205418A5009DEF85 /* UInt16ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt16ExtensionTests.swift; sourceTree = "<group>"; };
+		CDF76D8D20541BD6009DEF85 /* PacketConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketConstants.swift; sourceTree = "<group>"; };
+		CDF76D8F20541F17009DEF85 /* UInt64_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt64_Extensions.swift; sourceTree = "<group>"; };
+		CDF76D9120541F4C009DEF85 /* UInt64ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt64ExtensionTests.swift; sourceTree = "<group>"; };
+		CDF76D9420542023009DEF85 /* ExamplePacketHeaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePacketHeaderTests.swift; sourceTree = "<group>"; };
+		CDF76D96205420D3009DEF85 /* SixBytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixBytes.swift; sourceTree = "<group>"; };
+		CDF76D98205420E7009DEF85 /* SixBytesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixBytesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +95,11 @@
 		CDF76D5A20541504009DEF85 /* PacketReader */ = {
 			isa = PBXGroup;
 			children = (
-				CDF76D5B20541504009DEF85 /* AppDelegate.swift */,
-				CDF76D5D20541504009DEF85 /* ViewController.swift */,
+				CDF76D8C20541BCA009DEF85 /* Constants */,
+				CDF76D7D20541536009DEF85 /* Extensions */,
+				CDF76D7B20541514009DEF85 /* Types */,
+				CDF76D7C2054152F009DEF85 /* Supporting Files */,
 				CDF76D5F20541504009DEF85 /* Main.storyboard */,
-				CDF76D6220541504009DEF85 /* Assets.xcassets */,
-				CDF76D6420541504009DEF85 /* LaunchScreen.storyboard */,
-				CDF76D6720541504009DEF85 /* Info.plist */,
 			);
 			path = PacketReader;
 			sourceTree = "<group>";
@@ -90,10 +107,68 @@
 		CDF76D6F20541504009DEF85 /* PacketReaderTests */ = {
 			isa = PBXGroup;
 			children = (
-				CDF76D7020541504009DEF85 /* PacketReaderTests.swift */,
+				CDF76D9320542014009DEF85 /* Types */,
+				CDF76D84205416BB009DEF85 /* Extensions */,
 				CDF76D7220541504009DEF85 /* Info.plist */,
 			);
 			path = PacketReaderTests;
+			sourceTree = "<group>";
+		};
+		CDF76D7B20541514009DEF85 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				CDF76D7E20541552009DEF85 /* ExamplePacketHeader.swift */,
+				CDF76D96205420D3009DEF85 /* SixBytes.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		CDF76D7C2054152F009DEF85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDF76D5B20541504009DEF85 /* AppDelegate.swift */,
+				CDF76D6220541504009DEF85 /* Assets.xcassets */,
+				CDF76D6420541504009DEF85 /* LaunchScreen.storyboard */,
+				CDF76D6720541504009DEF85 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDF76D7D20541536009DEF85 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CDF76D8020541634009DEF85 /* UInt16_Extensions.swift */,
+				CDF76D8220541685009DEF85 /* UInt32_Extensions.swift */,
+				CDF76D8F20541F17009DEF85 /* UInt64_Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CDF76D84205416BB009DEF85 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CDF76D8820541780009DEF85 /* UInt32ExtensionTests.swift */,
+				CDF76D8A205418A5009DEF85 /* UInt16ExtensionTests.swift */,
+				CDF76D9120541F4C009DEF85 /* UInt64ExtensionTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CDF76D8C20541BCA009DEF85 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CDF76D8D20541BD6009DEF85 /* PacketConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		CDF76D9320542014009DEF85 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				CDF76D9420542023009DEF85 /* ExamplePacketHeaderTests.swift */,
+				CDF76D98205420E7009DEF85 /* SixBytesTests.swift */,
+			);
+			path = Types;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +225,7 @@
 					};
 					CDF76D6B20541504009DEF85 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CDF76D5720541504009DEF85;
 					};
@@ -199,8 +275,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDF76D5E20541504009DEF85 /* ViewController.swift in Sources */,
 				CDF76D5C20541504009DEF85 /* AppDelegate.swift in Sources */,
+				CDF76D9020541F17009DEF85 /* UInt64_Extensions.swift in Sources */,
+				CDF76D8E20541BD6009DEF85 /* PacketConstants.swift in Sources */,
+				CDF76D97205420D3009DEF85 /* SixBytes.swift in Sources */,
+				CDF76D8120541634009DEF85 /* UInt16_Extensions.swift in Sources */,
+				CDF76D8320541685009DEF85 /* UInt32_Extensions.swift in Sources */,
+				CDF76D7F20541552009DEF85 /* ExamplePacketHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDF76D7120541504009DEF85 /* PacketReaderTests.swift in Sources */,
+				CDF76D8B205418A5009DEF85 /* UInt16ExtensionTests.swift in Sources */,
+				CDF76D9520542023009DEF85 /* ExamplePacketHeaderTests.swift in Sources */,
+				CDF76D8920541780009DEF85 /* UInt32ExtensionTests.swift in Sources */,
+				CDF76D9220541F4D009DEF85 /* UInt64ExtensionTests.swift in Sources */,
+				CDF76D99205420E7009DEF85 /* SixBytesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +439,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PacketReader/Info.plist;
+				DEVELOPMENT_TEAM = 2HN3MWMRX2;
+				INFOPLIST_FILE = "$(SRCROOT)/PacketReader/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.philipshen.testing.PacketReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -368,7 +454,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PacketReader/Info.plist;
+				DEVELOPMENT_TEAM = 2HN3MWMRX2;
+				INFOPLIST_FILE = "$(SRCROOT)/PacketReader/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.philipshen.testing.PacketReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -382,11 +469,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2HN3MWMRX2;
 				INFOPLIST_FILE = PacketReaderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.philipshen.testing.PacketReaderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PacketReaderTests/Extensions/PacketReaderTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PacketReader.app/PacketReader";
@@ -398,11 +489,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2HN3MWMRX2;
 				INFOPLIST_FILE = PacketReaderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.philipshen.testing.PacketReaderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PacketReaderTests/Extensions/PacketReaderTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PacketReader.app/PacketReader";

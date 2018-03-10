@@ -1,15 +1,15 @@
 //
-//  PacketReaderTests.swift
+//  UInt32ExtensionTests.swift
 //  PacketReaderTests
 //
 //  Created by Philip Shen on 3/10/18.
 //  Copyright © 2018 Philip Shen. All rights reserved.
 //
 
-import XCTest
 @testable import PacketReader
+import XCTest
 
-class PacketReaderTests: XCTestCase {
+class UInt32ExtensionTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,16 +21,16 @@ class PacketReaderTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testInitWithUInt8Array() {
+        // Given
+        let expectedOutput: UInt32 = 513
+        let input: [UInt8] = [1, 2, 0, 0]
+        
+        // When
+        let actualOutput = UInt32(bytes: input)
+        
+        // Then
+        XCTAssertEqual(expectedOutput, actualOutput!, "Initializing with [UInt8] should return the correct value")
     }
     
 }
